@@ -11,7 +11,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
@@ -30,6 +29,24 @@
             bindings =
                 <&kp>,
                 <&kp>;
+        };
+        td_L: td_L {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_L";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_PARENTHESIS>,
+                <&kp LEFT_BRACE>,
+                <&kp LEFT_BRACKET>;
+        };
+        td_R: td_R {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_R";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RIGHT_PARENTHESIS>,
+                <&kp RIGHT_BRACE>,
+                <&kp RIGHT_BRACKET>;
         };
     };
 
@@ -85,7 +102,7 @@
 &kp EQUAL          &kp N1          &kp N2              &kp N3            &kp N4  &kp N5        &mo 1                                                                    &mo 1  &kp N6            &kp N7              &kp N8          &kp N9                  &kp N0  &kp MINUS
   &kp TAB           &kp Q           &kp W               &kp E             &kp R   &kp T        &none                                                                    &none   &kp Y             &kp U               &kp I           &kp O                   &kp P   &kp BSLH
   &kp ESC  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F   &kp G        &none  &kp LCTRL    &kp LALT  &none  &none   &kp LALT   &kp LCTRL        &none   &kp H  &hm LEFT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L  &hm LEFT_GUI SEMICOLON    &kp SQT
-&kt LSHFT           &kp Z           &kp X               &kp C             &kp V   &kp B        &none      &none    &kp HOME  &none  &none  &kp PG_UP       &none        &none   &kp N             &kp M           &kp COMMA         &kp DOT                &kp FSLH  &kt RSHFT
+    &td_L           &kp Z           &kp X               &kp C             &kp V   &kp B        &none      &none    &kp HOME  &none  &none  &kp PG_UP       &none        &none   &kp N             &kp M           &kp COMMA         &kp DOT                &kp FSLH      &td_R
     &none       &kp GRAVE        &kp CAPS            &kp LEFT         &kp RIGHT          &lt 2 SPACE   &kp BSPC  &kp DELETE                    &mo 4  &kp LSHIFT  &lt 3 ENTER                  &kp DOWN        &kp UP_ARROW        &kp LBKT                &kp RBKT   &kp LGUI
             >;
         };
