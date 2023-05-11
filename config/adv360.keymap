@@ -52,6 +52,17 @@
 
             tapping-term-ms = <200>;
         };
+        testtdl: testtdl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TESTTDL";
+            #binding-cells = <0>;
+            bindings =
+                <&kp NUMBER_1>,
+                <&kp NUMBER_2>,
+                <&kp NUMBER_3>;
+
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -107,7 +118,7 @@
   &kp TAB           &kp Q           &kp W               &kp E             &kp R   &kp T        &none                                                                    &none   &kp Y             &kp U               &kp I           &kp O                   &kp P   &kp BSLH
   &kp ESC  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F   &kp G        &none  &kp LCTRL    &kp LALT  &none  &none   &kp LALT   &kp LCTRL        &none   &kp H  &hm LEFT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L  &hm LEFT_GUI SEMICOLON    &kp SQT
     &td_L           &kp Z           &kp X               &kp C             &kp V   &kp B        &none      &none    &kp HOME  &none  &none  &kp PG_UP       &none        &none   &kp N             &kp M           &kp COMMA         &kp DOT                &kp FSLH      &td_R
-    &none       &kp GRAVE        &kp CAPS            &kp LEFT         &kp RIGHT          &lt 2 SPACE   &kp BSPC  &kp DELETE                    &mo 4  &kp LSHIFT  &lt 3 ENTER                  &kp DOWN        &kp UP_ARROW        &kp LBKT                &kp RBKT   &kp LGUI
+ &testtdl       &kp GRAVE        &kp CAPS            &kp LEFT         &kp RIGHT          &lt 2 SPACE   &kp BSPC  &kp DELETE                    &mo 4  &kp LSHIFT  &lt 3 ENTER                  &kp DOWN        &kp UP_ARROW        &kp LBKT                &kp RBKT   &kp LGUI
             >;
         };
 
