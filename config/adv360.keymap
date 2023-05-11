@@ -35,8 +35,8 @@
             label = "TD_L";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_PARENTHESIS>,
-                <&kp LEFT_BRACE>,
+                <&kp LS(NUMBER_9)>,
+                <&kp LS(LEFT_BRACKET)>,
                 <&kp LEFT_BRACKET>;
 
             tapping-term-ms = <200>;
@@ -46,8 +46,8 @@
             label = "TD_R";
             #binding-cells = <0>;
             bindings =
-                <&kp RIGHT_PARENTHESIS>,
-                <&kp RIGHT_BRACE>,
+                <&kp LS(NUMBER_0)>,
+                <&kp LS(RIGHT_BRACKET)>,
                 <&kp RIGHT_BRACKET>;
 
             tapping-term-ms = <200>;
