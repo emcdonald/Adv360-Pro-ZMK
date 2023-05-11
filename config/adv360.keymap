@@ -38,6 +38,8 @@
                 <&kp LEFT_PARENTHESIS>,
                 <&kp LEFT_BRACE>,
                 <&kp LEFT_BRACKET>;
+
+            tapping-term-ms = <200>;
         };
         td_R: td_R {
             compatible = "zmk,behavior-tap-dance";
@@ -47,6 +49,8 @@
                 <&kp RIGHT_PARENTHESIS>,
                 <&kp RIGHT_BRACE>,
                 <&kp RIGHT_BRACKET>;
+
+            tapping-term-ms = <200>;
         };
     };
 
