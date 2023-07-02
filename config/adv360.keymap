@@ -34,46 +34,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        left_paren {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <29 46>;
-        };
-
-        right_paren {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <49 66>;
-        };
-
-        left_brak {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <30 45>;
-        };
-
-        right_brak {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <65 50>;
-        };
-
-        left_brace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <31 44>;
-        };
-
-        right_brace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <64 51>;
-        };
-
-        lessthan {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <32 43>;
-        };
-
-        greaterthan {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <52 63>;
-        };
     };
 
     keymap {
